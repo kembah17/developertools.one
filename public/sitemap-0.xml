@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://devtools.run</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/about</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/base64-encoder-decoder</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/base64-encoding-explained</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/cron-expression-generator</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/cron-expression-guide</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/css-generator</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/hash-generator</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/how-to-format-json</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/html-formatter</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/javascript-minifier</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/json-formatter</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/jwt-decoder</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/jwt-tokens-explained</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/privacy</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/regex-cheat-sheet</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/regex-tester</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/sql-formatter</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/sql-formatting-best-practices</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/terms</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/url-encoder-decoder</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://devtools.run/uuid-generator</loc><lastmod>2026-04-21T17:32:57.916Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+</urlset>
