@@ -71,7 +71,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">10. Contact</h2>
-          <p>For questions about these terms, contact us at <a href="mailto:hello@devtools.run" className="text-primary hover:underline">hello@devtools.run</a>.</p>
+          <p>For questions about these terms, contact us at <a href="mailto:hello@developertools.one" className="text-primary hover:underline">hello@developertools.one</a>.</p>
         </section>
       </div>
     </div>

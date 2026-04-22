@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://devtools.run
+Host: https://developertools.one
 
 # Sitemaps
-Sitemap: https://devtools.run/sitemap.xml
+Sitemap: https://developertools.one/sitemap.xml

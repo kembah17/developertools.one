@@ -83,7 +83,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">8. Contact</h2>
-          <p>If you have questions about this privacy policy, please contact us at <a href="mailto:hello@devtools.run" className="text-primary hover:underline">hello@devtools.run</a>.</p>
+          <p>If you have questions about this privacy policy, please contact us at <a href="mailto:hello@developertools.one" className="text-primary hover:underline">hello@developertools.one</a>.</p>
         </section>
       </div>
     </div>

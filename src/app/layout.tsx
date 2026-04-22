@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description: "Free online developer tools: JSON formatter, regex tester, Base64 encoder, SQL formatter, JWT decoder, and more. 100% client-side processing.",
   keywords: ["developer tools", "JSON formatter", "regex tester", "base64 encoder", "SQL formatter", "JWT decoder", "online dev tools"],
-  metadataBase: new URL("https://devtools.run"),
+  metadataBase: new URL("https://developertools.one"),
   openGraph: {
     type: "website",
     locale: "en_US",

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://devtools.run',
+  siteUrl: 'https://developertools.one',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: 'weekly',

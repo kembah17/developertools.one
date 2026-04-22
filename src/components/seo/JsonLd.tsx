@@ -4,7 +4,7 @@ export default function JsonLd({ name, description, url, category = "DeveloperAp
     "@type": "WebApplication",
     name,
     description,
-    url: `https://devtools.run${url}`,
+    url: `https://developertools.one${url}`,
     applicationCategory: category,
     operatingSystem: "Any",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
