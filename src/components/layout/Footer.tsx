@@ -30,7 +30,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <Link href="/" className="text-xl font-bold text-primary-light">⚡ DevTools.run</Link>
+            <Link href="/" className="text-xl font-bold text-primary-light">⚡ DeveloperTools.one</Link>
             <p className="mt-3 text-sm text-text-dark-muted">Free online developer tools. 100% client-side processing — your data never leaves your browser.</p>
           </div>
           <div>
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-border-dark text-center text-sm text-text-dark-muted">
-          <p>© {new Date().getFullYear()} DevTools.run — All tools run 100% in your browser. No data is ever sent to any server.</p>
+          <p>© {new Date().getFullYear()} DeveloperTools.one — All tools run 100% in your browser. No data is ever sent to any server.</p>
         </div>
       </div>
     </footer>

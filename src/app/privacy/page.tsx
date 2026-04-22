@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — DevTools.run",
-  description: "DevTools.run privacy policy. All tools run 100% client-side in your browser. No data is collected, stored, or transmitted to any server.",
+  title: "Privacy Policy — DeveloperTools.one",
+  description: "DeveloperTools.one privacy policy. All tools run 100% client-side in your browser. No data is collected, stored, or transmitted to any server.",
 };
 
 export default function PrivacyPage() {
@@ -14,12 +14,12 @@ export default function PrivacyPage() {
       <div className="space-y-6 text-text-light dark:text-text-dark-muted leading-relaxed">
         <div className="bg-accent/10 border border-accent/30 rounded-xl p-4">
           <p className="text-accent-dark dark:text-accent font-bold mb-1">🔒 Our Core Privacy Promise</p>
-          <p>All DevTools.run tools process data 100% client-side in your browser. Your code, text, tokens, files, and any other data you input into our tools <strong>never leaves your device</strong>. We cannot see, access, store, or transmit your data because it is never sent to any server.</p>
+          <p>All DeveloperTools.one tools process data 100% client-side in your browser. Your code, text, tokens, files, and any other data you input into our tools <strong>never leaves your device</strong>. We cannot see, access, store, or transmit your data because it is never sent to any server.</p>
         </div>
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">1. Data Processing</h2>
-          <p>DevTools.run is designed with a privacy-first architecture. All tool functionality is implemented using client-side JavaScript that runs entirely within your web browser. This means:</p>
+          <p>DeveloperTools.one is designed with a privacy-first architecture. All tool functionality is implemented using client-side JavaScript that runs entirely within your web browser. This means:</p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
             <li>No data you input into any tool is transmitted over the network</li>
             <li>No data is stored on our servers (we have no data storage infrastructure)</li>
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">3. Cookies</h2>
-          <p>DevTools.run may use the following types of cookies:</p>
+          <p>DeveloperTools.one may use the following types of cookies:</p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
             <li><strong>Essential cookies</strong> — For basic site functionality such as dark mode preference</li>
             <li><strong>Analytics cookies</strong> — To understand site usage patterns (anonymized)</li>
@@ -73,12 +73,12 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">6. Children&apos;s Privacy</h2>
-          <p>DevTools.run does not knowingly collect personal information from children under 13. Our tools are designed for developers and technical professionals.</p>
+          <p>DeveloperTools.one does not knowingly collect personal information from children under 13. Our tools are designed for developers and technical professionals.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">7. Changes to This Policy</h2>
-          <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date. Your continued use of DevTools.run after changes constitutes acceptance of the updated policy.</p>
+          <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date. Your continued use of DeveloperTools.one after changes constitutes acceptance of the updated policy.</p>
         </section>
 
         <section>

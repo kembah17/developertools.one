@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About DevTools.run — Free Online Developer Tools Suite",
-  description: "DevTools.run provides 12 free, privacy-focused developer tools that run entirely in your browser. No data is ever sent to a server.",
+  title: "About DeveloperTools.one — Free Online Developer Tools Suite",
+  description: "DeveloperTools.one provides 12 free, privacy-focused developer tools that run entirely in your browser. No data is ever sent to a server.",
 };
 
 export default function AboutPage() {
@@ -24,14 +24,14 @@ export default function AboutPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-      <h1 className="text-3xl sm:text-4xl font-extrabold text-text dark:text-text-dark mb-6">About DevTools.run</h1>
+      <h1 className="text-3xl sm:text-4xl font-extrabold text-text dark:text-text-dark mb-6">About DeveloperTools.one</h1>
 
       <div className="space-y-6 text-text-light dark:text-text-dark-muted leading-relaxed">
-        <p className="text-lg">DevTools.run is a free suite of 12 essential developer tools designed for speed, privacy, and simplicity. Every tool runs entirely in your browser — no data is ever uploaded to a server, no accounts are required, and there are no usage limits.</p>
+        <p className="text-lg">DeveloperTools.one is a free suite of 12 essential developer tools designed for speed, privacy, and simplicity. Every tool runs entirely in your browser — no data is ever uploaded to a server, no accounts are required, and there are no usage limits.</p>
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">Our Mission</h2>
-          <p>We believe developer tools should be fast, free, and private. Too many online tools require sign-ups, send your data to remote servers, or limit usage behind paywalls. DevTools.run takes a different approach: every computation happens locally in your browser using JavaScript. Your code, data, and tokens never leave your device.</p>
+          <p>We believe developer tools should be fast, free, and private. Too many online tools require sign-ups, send your data to remote servers, or limit usage behind paywalls. DeveloperTools.one takes a different approach: every computation happens locally in your browser using JavaScript. Your code, data, and tokens never leave your device.</p>
         </section>
 
         <section>
@@ -59,7 +59,7 @@ export default function AboutPage() {
 
         <section>
           <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-3">Technology</h2>
-          <p>DevTools.run is built with modern web technologies for optimal performance:</p>
+          <p>DeveloperTools.one is built with modern web technologies for optimal performance:</p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
             <li><strong>Next.js</strong> — React framework for fast page loads and SEO optimization</li>
             <li><strong>TypeScript</strong> — Type-safe code for reliability</li>
