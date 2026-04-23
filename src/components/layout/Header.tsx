@@ -62,10 +62,27 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <button onClick={toggleDark} className="relative w-14 h-7 rounded-full bg-surface-alt dark:bg-surface-dark-alt border border-border dark:border-border-dark transition-colors" aria-label="Toggle dark mode">
-              <span className={`absolute top-0.5 w-6 h-6 rounded-full transition-all flex items-center justify-center text-sm ${dark ? "left-7 bg-primary-dark" : "left-0.5 bg-primary"}`}>
-                {dark ? "🌙" : "☀️"}
-              </span>
+            <button
+              onClick={toggleDark}
+              aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                padding: "0.25rem",
+                borderRadius: "9999px",
+                border: "2px solid var(--color-border, #CBD5E1)",
+                backgroundColor: dark ? "var(--color-primary, #10B981)" : "var(--color-border, #CBD5E1)",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+                width: "4rem",
+                height: "2rem",
+                position: "relative",
+                flexShrink: 0,
+              }}
+            >
+              <span style={{ position: "absolute", left: "0.375rem", top: "50%", transform: "translateY(-50%)", fontSize: "0.75rem", opacity: dark ? 0.4 : 1, transition: "opacity 0.3s ease", lineHeight: 1 }}>☀️</span>
+              <span style={{ position: "absolute", right: "0.375rem", top: "50%", transform: "translateY(-50%)", fontSize: "0.75rem", opacity: dark ? 1 : 0.4, transition: "opacity 0.3s ease", lineHeight: 1 }}>🌙</span>
+              <span style={{ position: "absolute", top: "2px", left: dark ? "calc(100% - 1.625rem)" : "2px", width: "1.5rem", height: "1.5rem", borderRadius: "50%", backgroundColor: "#FFFFFF", boxShadow: "0 1px 3px rgba(0,0,0,0.3)", transition: "left 0.3s ease" }} />
             </button>
             <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden p-2 text-text-light dark:text-text-dark-muted hover:text-primary" aria-label="Menu">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} /></svg>
