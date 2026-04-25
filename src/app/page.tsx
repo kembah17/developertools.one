@@ -1,19 +1,20 @@
-import Link from "next/link";
 import AdSlot from "@/components/ui/AdSlot";
+import HomeToolGrid from "@/components/ui/HomeToolGrid";
+import ArticleGrid from "@/components/ui/ArticleGrid";
 
 const tools = [
-  { name: "JSON Formatter", desc: "Format, validate, and beautify JSON with tree view and syntax highlighting.", href: "/json-formatter", icon: "{ }" },
-  { name: "Regex Tester", desc: "Test regex patterns with real-time match highlighting and pattern library.", href: "/regex-tester", icon: ".*" },
-  { name: "Base64 Encode/Decode", desc: "Encode and decode Base64 strings and files with drag & drop support.", href: "/base64-encoder-decoder", icon: "B64" },
-  { name: "URL Encode/Decode", desc: "Encode, decode, and parse URLs with component breakdown.", href: "/url-encoder-decoder", icon: "%20" },
-  { name: "HTML Formatter", desc: "Beautify and minify HTML code with proper indentation.", href: "/html-formatter", icon: "</>" },
-  { name: "CSS Generator", desc: "Generate gradients, box shadows, and flexbox layouts visually.", href: "/css-generator", icon: "#{}" },
-  { name: "JS Minifier", desc: "Minify JavaScript code and see size reduction percentage.", href: "/javascript-minifier", icon: "JS" },
-  { name: "SQL Formatter", desc: "Format SQL queries with dialect support and keyword capitalization.", href: "/sql-formatter", icon: "SQL" },
+  { name: "JSON Formatter", desc: "Format, validate, and beautify JSON with tree view and syntax highlighting.", href: "/json-formatter", icon: "📋" },
+  { name: "Regex Tester", desc: "Test regex patterns with real-time match highlighting and pattern library.", href: "/regex-tester", icon: "🔍" },
+  { name: "Base64 Encode/Decode", desc: "Encode and decode Base64 strings and files with drag & drop support.", href: "/base64-encoder-decoder", icon: "🔐" },
+  { name: "URL Encode/Decode", desc: "Encode, decode, and parse URLs with component breakdown.", href: "/url-encoder-decoder", icon: "🔗" },
+  { name: "HTML Formatter", desc: "Beautify and minify HTML code with proper indentation.", href: "/html-formatter", icon: "🌐" },
+  { name: "CSS Generator", desc: "Generate gradients, box shadows, and flexbox layouts visually.", href: "/css-generator", icon: "🎨" },
+  { name: "JS Minifier", desc: "Minify JavaScript code and see size reduction percentage.", href: "/javascript-minifier", icon: "📦" },
+  { name: "SQL Formatter", desc: "Format SQL queries with dialect support and keyword capitalization.", href: "/sql-formatter", icon: "🗃️" },
   { name: "Cron Generator", desc: "Build cron expressions visually with human-readable descriptions.", href: "/cron-expression-generator", icon: "⏰" },
-  { name: "JWT Decoder", desc: "Decode JWT tokens and inspect header, payload, and expiration.", href: "/jwt-decoder", icon: "JWT" },
-  { name: "UUID Generator", desc: "Generate UUID v4 with bulk generation and format options.", href: "/uuid-generator", icon: "ID" },
-  { name: "Hash Generator", desc: "Generate MD5, SHA-1, SHA-256, SHA-512 hashes from text or files.", href: "/hash-generator", icon: "#" },
+  { name: "JWT Decoder", desc: "Decode JWT tokens and inspect header, payload, and expiration.", href: "/jwt-decoder", icon: "🔓" },
+  { name: "UUID Generator", desc: "Generate UUID v4 with bulk generation and format options.", href: "/uuid-generator", icon: "🆔" },
+  { name: "Hash Generator", desc: "Generate MD5, SHA-1, SHA-256, SHA-512 hashes from text or files.", href: "/hash-generator", icon: "#️⃣" },
 ];
 
 const articles = [
@@ -27,17 +28,29 @@ const articles = [
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
       {/* Hero */}
-      <section className="text-center mb-16">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text dark:text-text-dark mb-6">
-          Free Online <span className="text-primary">Developer Tools</span>
+      <section style={{ textAlign: 'center', marginBottom: '4rem', paddingTop: '3rem' }}>
+        <h1 style={{
+          fontSize: '2.5rem',
+          fontWeight: 800,
+          color: 'var(--color-text-heading)',
+          marginBottom: '1.5rem',
+          lineHeight: 1.2,
+        }}>
+          Free Online <span style={{ color: 'var(--color-brand)' }}>Developer Tools</span>
         </h1>
-        <p className="text-lg sm:text-xl text-text-light dark:text-text-dark-muted max-w-3xl mx-auto mb-8">
+        <p style={{
+          fontSize: '1.125rem',
+          color: 'var(--color-text-secondary)',
+          maxWidth: '48rem',
+          margin: '0 auto 2rem',
+          lineHeight: 1.7,
+        }}>
           12 essential developer tools that run 100% in your browser. Format JSON, test regex, encode Base64, generate UUIDs, decode JWTs, and more — all free, fast, and private.
         </p>
-        <div className="flex items-center justify-center gap-2 text-sm text-accent dark:text-accent font-medium">
-          <span className="text-lg">🔒</span>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--color-brand)', fontWeight: 500 }}>
+          <span style={{ fontSize: '1.125rem' }}>🔒</span>
           <span>All processing happens in your browser. No data is sent to any server.</span>
         </div>
       </section>
@@ -45,35 +58,17 @@ export default function Home() {
       <AdSlot slot="home-top" />
 
       {/* Tools Grid */}
-      <section className="mt-12 mb-16">
-        <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-8 text-center">Developer Tools</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          {tools.map((tool) => (
-            <Link key={tool.href} href={tool.href} className="group bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-xl p-5 shadow-md hover:shadow-lg hover:border-primary dark:hover:border-primary transition-all">
-              <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center text-primary font-mono font-bold text-lg mb-3 group-hover:bg-primary group-hover:text-surface transition-colors">
-                {tool.icon}
-              </div>
-              <h3 className="font-semibold text-text dark:text-text-dark mb-1.5 group-hover:text-primary transition-colors">{tool.name}</h3>
-              <p className="text-sm text-text-light dark:text-text-dark-muted leading-relaxed">{tool.desc}</p>
-            </Link>
-          ))}
-        </div>
+      <section style={{ marginTop: '3rem', marginBottom: '4rem' }}>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--color-text-heading)', marginBottom: '2rem', textAlign: 'center' }}>Developer Tools</h2>
+        <HomeToolGrid tools={tools} />
       </section>
 
       <AdSlot slot="home-mid" />
 
       {/* Articles */}
-      <section className="mt-12 mb-16">
-        <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-8 text-center">Developer Guides & References</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {articles.map((a) => (
-            <Link key={a.href} href={a.href} className="group bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-xl p-5 shadow-md hover:shadow-lg hover:border-primary dark:hover:border-primary transition-all">
-              <h3 className="font-semibold text-text dark:text-text-dark mb-2 group-hover:text-primary transition-colors">{a.title}</h3>
-              <p className="text-sm text-text-light dark:text-text-dark-muted leading-relaxed">{a.desc}</p>
-              <span className="inline-block mt-3 text-sm font-medium text-primary group-hover:underline">Read more →</span>
-            </Link>
-          ))}
-        </div>
+      <section style={{ marginTop: '3rem', marginBottom: '4rem' }}>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--color-text-heading)', marginBottom: '2rem', textAlign: 'center' }}>Developer Guides & References</h2>
+        <ArticleGrid articles={articles} />
       </section>
 
       <AdSlot slot="home-bottom" />
