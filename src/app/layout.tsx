@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     siteName: "DeveloperTools.one",
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Developer Tools' }],
   },
+
+  alternates: { canonical: 'https://developertools.one' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
