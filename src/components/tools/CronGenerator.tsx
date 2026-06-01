@@ -1,5 +1,5 @@
 "use client";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import CopyButton from "@/components/ui/CopyButton";
 
 const presets = [
@@ -96,7 +96,11 @@ export default function CronGenerator() {
   const parts5 = fields;
 
   const description = useMemo(() => describeCron(parts5), [parts5]);
-  const nextRuns = useMemo(() => getNextRuns(parts5, 5), [parts5]);
+  const [nextRuns, setNextRuns] = useState<Date[]>([]);
+
+  useEffect(() => {
+    setNextRuns(getNextRuns(parts5, 5));
+  }, [parts5]);
 
   const updateField = (i: number, val: string) => {
     const next = [...fields];
