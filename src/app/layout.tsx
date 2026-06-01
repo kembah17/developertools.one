@@ -16,10 +16,12 @@ export const metadata: Metadata = {
   description: "Free online developer tools: JSON formatter, regex tester, Base64 encoder, SQL formatter, JWT decoder, and more. 100% client-side processing.",
   keywords: ["developer tools", "JSON formatter", "regex tester", "base64 encoder", "SQL formatter", "JWT decoder", "online dev tools"],
   metadataBase: new URL("https://developertools.one"),
+  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "DeveloperTools.one",
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Developer Tools' }],
   },
 };
 
@@ -33,6 +35,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var d=document.documentElement;var t=localStorage.getItem("theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme:dark)").matches)){d.classList.add("dark")}else{d.classList.remove("dark")}}catch(e){}})()`
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "DeveloperTools.one",
+              "url": "https://developertools.one",
+              "description": "Free online developer tools: JSON formatter, regex tester, base64 encoder, URL encoder, and more. 100% client-side processing."
+            })
           }}
         />
       </head>
