@@ -8,7 +8,7 @@ function GradientGenerator() {
   const [angle, setAngle] = useState(90);
   const [colors, setColors] = useState([{ color: "#d97706", stop: 0 }, { color: "#ea580c", stop: 100 }]);
 
-  const addColor = () => setColors([...colors, { color: "#059669", stop: 50 }]);
+  const addColor = () => setColors([...colors, { color: "#047857", stop: 50 }]);
   const removeColor = (i: number) => { if (colors.length > 2) setColors(colors.filter((_, idx) => idx !== i)); };
   const updateColor = (i: number, field: "color" | "stop", val: string | number) => {
     const next = [...colors];
