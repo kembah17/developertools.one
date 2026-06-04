@@ -38,7 +38,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary">
             <span className="text-2xl">⚡</span>
-            <span>DevTools<span className="text-secondary">.run</span></span>
+            <span>DevTools<span className="text-accent dark:text-[var(--color-brand)]">.run</span></span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
