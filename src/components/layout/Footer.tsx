@@ -98,6 +98,13 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Nigerian Business Directory */}
+        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '1.5rem', paddingTop: '1rem' }}>
+          <a href="https://myhustle.space" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+            Discover Nigerian businesses on <span style={{ color: 'var(--color-footer-link)', fontWeight: 500 }}>MyHustle.space</span> &mdash; Nigeria&apos;s free business directory
+          </a>
+        </div>
+
         <div style={{ borderTop: '1px solid var(--color-footer-border)', paddingTop: '1.5rem', textAlign: 'center', fontSize: '0.8125rem', color: 'var(--color-footer-muted)' }}>
           <p>© {new Date().getFullYear()} DeveloperTools.one — All tools run 100% in your browser. No data is ever sent to any server.</p>
         </div>
