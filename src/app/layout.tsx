@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   description: "Free online developer tools: JSON formatter, regex tester, Base64 encoder, SQL formatter, JWT decoder, and more. 100% client-side processing.",
   keywords: ["developer tools", "JSON formatter", "regex tester", "base64 encoder", "SQL formatter", "JWT decoder", "online dev tools"],
-  metadataBase: new URL("https://www.developertools.one"),
+  metadataBase: new URL("https://developertools.one"),
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Developer Tools' }],
   },
 
-  alternates: { canonical: 'https://www.developertools.one' },
+  alternates: { canonical: 'https://developertools.one' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "DeveloperTools.one",
-              "url": "https://www.developertools.one",
+              "url": "https://developertools.one",
               "description": "Free online developer tools: JSON formatter, regex tester, base64 encoder, URL encoder, and more. 100% client-side processing."
             })
           }}
